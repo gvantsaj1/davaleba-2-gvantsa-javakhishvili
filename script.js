@@ -58,9 +58,23 @@ for(let item of array1){
 
 
 //7
-// let array2 = [[ 2, -3, 5, 10 ], [25, -24, -11, 100] , [-6, -7, 10] ];
-// for (let x = 0; x < array2.length; x++)  ????
-
+let array2 = [[ 2, -3, 5, 10 ], [25, -24, -11, 100] , [-6, -7, 10] ];
+for (let x = 0; x < array2.length; x++){
+    const element = array2[x];
+    for(let i = 0; i < element.length; i++){
+        const positive = element[i];
+        if(positive > 0){
+            console.log(positive);
+        }
+    }
+}
+// for (let item of array2){
+//     for(let positiveElement of item){
+//         if(positiveElement > 0){
+//             console.log(positiveElement);
+//         }
+//     }
+// } dabechdavs igives
 
 //N8
 let array3 = [ 2, 3, 5, 10,25,24,11, 100 , 6,7, 10 ];
@@ -76,18 +90,15 @@ for(let item of array3){
 } //დაბეჭდავს კენტ რიცხვებს
 
 //N9
-let item = "ka"
-if (item == "ka"){
-    console.log("ჰელოუ");
-}else{
-    console.log("hello");
-}
+
 let item1 = "en";
 switch(item1){
     case  "ka":
     console.log("ჰელოუ1");
+    break;
     case "en":
     console.log("hello");
     break;
+    default;
 }
 
